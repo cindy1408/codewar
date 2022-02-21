@@ -32,3 +32,8 @@ func solution(str, ending string) bool {
 	}
 	return false
 }
+
+// much easier way 
+func betterSolution(str, ending string) bool {
+	return strings.HasSuffix(str, ending)
+}

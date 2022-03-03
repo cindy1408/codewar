@@ -26,7 +26,7 @@ func Smallest(n int64) []int64 {
 			smallest = num
 			position = i
 		} else {
-			if smallest >= num {
+			if smallest > num {
 				smallest = num
 				position = i
 			}
@@ -37,14 +37,12 @@ func Smallest(n int64) []int64 {
 	result = append(result, strArr[position])
 	result = append(result, strArr[:position]...)
 	result = append(result, strArr[position+1:]...)
-	// fmt.Println("results: ", result)
 	format, _ := strconv.ParseInt(strings.Join(result, ""), 10, 64)
-	// fmt.Println(format)
 	output := []int64{}
 	index := 0
 	if smallest == 0 {
-		position = position + 1 
-		index = index + 1
+		position = position 
+		index = index 
 	}
 	output = append(output, format, int64(position), int64(index))
 	return output

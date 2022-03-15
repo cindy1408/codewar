@@ -1,0 +1,1 @@
+/Users/cindysumyeukcheung/projects/codewar/rust/removeFirstAndLastCharacter/target/debug/removeFirstAndLastCharacter: /Users/cindysumyeukcheung/projects/codewar/rust/removeFirstAndLastCharacter/src/main.rs
